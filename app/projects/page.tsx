@@ -94,6 +94,7 @@ export default function ProjectsPage() {
 
         <section className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
           <Card>
+            <Link href={`/projects/${featured.slug}`} passHref>
             <article className="relative w-full h-full p-4 md:p-8">
               <div className="flex items-center justify-between text-xs text-zinc-100">
                 <time dateTime={new Date(featured.date).toISOString()}>
@@ -103,13 +104,12 @@ export default function ProjectsPage() {
               <h2 className="mt-4 text-3xl font-bold text-zinc-100 sm:text-4xl font-display">{featured.title}</h2>
               <p className="mt-4 leading-8 text-zinc-400">{featured.description}</p>
               <div className="absolute bottom-4 md:bottom-8">
-                <Link href={`/projects/${featured.slug}`}>
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block cursor-pointer">
                     Read more <span aria-hidden="true">&rarr;</span>
                   </p>
-                </Link>
               </div>
             </article>
+            </Link>
           </Card>
 
           <div className="flex flex-col w-full gap-8 border-t border-gray-900/10 lg:border-t-0">

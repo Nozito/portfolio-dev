@@ -41,7 +41,6 @@ const languageItems = [
     { icon: <SiPhp />, color: "grey", label: "PHP" },
     { icon: <SiSymfony />, color: "grey", label: "Symfony" },
     { icon: <SiMysql />, color: "gray", label: "MySQL" },
-    
 ];
 
 const toolsItems = [
@@ -58,20 +57,18 @@ const toolsItems = [
     { icon: <SiAdobephotoshop />, color: "grey", label: "Photoshop" },
     { icon: <SiAdobexd />, color: "grey", label: "Adobe XD" },
     { icon: <BiLogoMicrosoft />, color: "grey", label: "Suite Microsoft" },
-    
 ];
-
 
 export default function AboutPage() {
     return (
         <div className="bg-dark text-white">
             <Navigation />
-            <main className="max-w-screen-xl mx-auto px-8 py-24">
+            <main className="max-w-screen-xl mx-auto px-4 py-24">
                 {/* Hero Section */}
-                <header className="flex items-center justify-between space-y-8 lg:space-y-0">
+                <header className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
                     <div className="flex justify-center w-full lg:w-1/3">
                         {/* Profile Image */}
-                        <div className="relative w-40 h-40 rounded-full overflow-hidden ">
+                        <div className="relative w-40 h-40 rounded-full overflow-hidden">
                             <img
                                 src="/noah.jpeg"
                                 alt="Mon portrait"
@@ -81,15 +78,15 @@ export default function AboutPage() {
                     </div>
                     <div className="lg:w-2/3 lg:pl-12 text-center lg:text-left">
                         {/* Name and Title */}
-                        <h1 className="text-5xl font-bold text-white">Noah DEKEYZER</h1>
-                        <p className="text-2xl text-gray-400 mt-2">2nd year student of BTS SIO SLAM</p>
+                        <h1 className="text-4xl sm:text-5xl font-bold text-white">Noah DEKEYZER</h1>
+                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">2nd year student of BTS SIO SLAM</p>
                         {/* Social Media Links */}
                         <div className="flex space-x-8 mt-6 justify-center lg:justify-start">
                             <a
                                 href="https://twitter.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-grey-400 transition-colors text-xl"
+                                className="text-gray-400 hover:text-grey-400 transition-colors text-lg sm:text-xl"
                             >
                                 Twitter
                             </a>
@@ -97,7 +94,7 @@ export default function AboutPage() {
                                 href="https://linkedin.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-grey-600 transition-colors text-xl"
+                                className="text-gray-400 hover:text-grey-600 transition-colors text-lg sm:text-xl"
                             >
                                 LinkedIn
                             </a>
@@ -105,14 +102,14 @@ export default function AboutPage() {
                                 href="https://github.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-gray-500 transition-colors text-xl"
+                                className="text-gray-400 hover:text-gray-500 transition-colors text-lg sm:text-xl"
                             >
                                 GitHub
                             </a>
                         </div>
 
                         {/* Short description */}
-                        <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
                             Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals.
                             I am always looking for new challenges and learning opportunities.
                         </p>
@@ -120,7 +117,7 @@ export default function AboutPage() {
                 </header>
 
                 {/* Work Experience Section */}
-                <section className="mt-16 flex lg:w-full lg:pl-12 lg:text-left">
+                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
                     <div className="space-y-8 w-full lg:w-2/3">
                         <h2 className="text-3xl font-semibold text-white">Profesionnel Experiences</h2>
 
@@ -177,7 +174,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* Studies Section */}
-                <section className="mt-16 flex lg:w-full lg:pl-12 lg:text-left">
+                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
                     <div className="space-y-8 w-full lg:w-2/3">
                         <h2 className="text-3xl font-semibold text-white">Studies</h2>
                         <div className="p-8">
@@ -199,7 +196,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="mt-16 flex  lg:w-full lg:pl-12 lg:text-left">
+                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
                     <div className="space-y-8 w-full lg:w-2/3">
                         <h2 className="text-3xl font-semibold text-white">Languages and Skills</h2>
                         <div className="p-8">
