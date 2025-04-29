@@ -1,62 +1,49 @@
-import { Metadata } from "next";
-import { Navigation } from "../components/nav";
-import { BiLogoVisualStudio, BiLogoBootstrap, BiLogoMicrosoft } from "react-icons/bi";
-import {
-    SiJavascript,
-    SiReact,
-    SiHtml5,
-    SiCss3,
-    SiGit,
-    SiAndroidstudio,
-    SiFigma,
-    SiPostman,
-    SiTrello,
-    SiGithub,
-    SiPhpstorm,
-    SiPhp,
-    SiSymfony,
-    SiMysql,
-    SiTailwindcss,
-    SiAdobeaftereffects,
-    SiAdobepremierepro,
-    SiAdobeillustrator,
-    SiAdobephotoshop,
-    SiAdobexd,
-} from "react-icons/si";
-import GlassIcons from "../components/GlassIcons";
+'use client';
 
+import Image from 'next/image';
+import { Metadata } from 'next';
+import { Navigation } from '../components/nav';
+import { BiLogoVisualStudio, BiLogoBootstrap, BiLogoMicrosoft } from 'react-icons/bi';
+import {
+    SiJavascript, SiHtml5, SiCss3, SiGit, SiAndroidstudio, SiFigma,
+    SiPostman, SiTrello, SiGithub, SiPhpstorm, SiPhp, SiSymfony, SiMysql,
+    SiTailwindcss, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator,
+    SiAdobephotoshop, SiAdobexd,
+} from 'react-icons/si';
+import GlassIcons from '../components/GlassIcons';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: "À propos de moi",
-    description: "Découvrez mon parcours, mes expériences et mes passions.",
+    title: 'À propos de moi',
+    description: 'Découvrez mon parcours, mes expériences et mes passions.',
 };
 
 const languageItems = [
-    { icon: <SiHtml5 />, color: "grey", label: "HTML" },
-    { icon: <SiCss3 />, color: "grey", label: "CSS" },
-    { icon: <SiJavascript />, color: "grey", label: "JavaScript" },
-    { icon: <SiGit />, color: "grey", label: "Git" },
-    { icon: <BiLogoBootstrap />, color: "grey", label: "Bootstrap" },
-    { icon: <SiTailwindcss />, color: "grey", label: "Tailwind CSS" },
-    { icon: <SiPhp />, color: "grey", label: "PHP" },
-    { icon: <SiSymfony />, color: "grey", label: "Symfony" },
-    { icon: <SiMysql />, color: "gray", label: "MySQL" },
+    { icon: <SiHtml5 />, color: 'grey', label: 'HTML' },
+    { icon: <SiCss3 />, color: 'grey', label: 'CSS' },
+    { icon: <SiJavascript />, color: 'grey', label: 'JavaScript' },
+    { icon: <SiGit />, color: 'grey', label: 'Git' },
+    { icon: <BiLogoBootstrap />, color: 'grey', label: 'Bootstrap' },
+    { icon: <SiTailwindcss />, color: 'grey', label: 'Tailwind CSS' },
+    { icon: <SiPhp />, color: 'grey', label: 'PHP' },
+    { icon: <SiSymfony />, color: 'grey', label: 'Symfony' },
+    { icon: <SiMysql />, color: 'gray', label: 'MySQL' },
 ];
 
 const toolsItems = [
-    { icon: <BiLogoVisualStudio />, color: "grey", label: "Visual Studio" },
-    { icon: <SiPhpstorm />, color: "grey", label: "PhpStorm" },
-    { icon: <SiGithub />, color: "grey", label: "GitHub" },
-    { icon: <SiAndroidstudio />, color: "grey", label: "Android Studio" },
-    { icon: <SiFigma />, color: "grey", label: "Figma" },
-    { icon: <SiPostman />, color: "grey", label: "Postman" },
-    { icon: <SiTrello />, color: "grey", label: "Trello" },
-    { icon: <SiAdobeaftereffects />, color: "grey", label: "After Effects" },
-    { icon: <SiAdobepremierepro />, color: "grey", label: "Premiere Pro" },
-    { icon: <SiAdobeillustrator />, color: "grey", label: "Illustrator" },
-    { icon: <SiAdobephotoshop />, color: "grey", label: "Photoshop" },
-    { icon: <SiAdobexd />, color: "grey", label: "Adobe XD" },
-    { icon: <BiLogoMicrosoft />, color: "grey", label: "Suite Microsoft" },
+    { icon: <BiLogoVisualStudio />, color: 'grey', label: 'Visual Studio' },
+    { icon: <SiPhpstorm />, color: 'grey', label: 'PhpStorm' },
+    { icon: <SiGithub />, color: 'grey', label: 'GitHub' },
+    { icon: <SiAndroidstudio />, color: 'grey', label: 'Android Studio' },
+    { icon: <SiFigma />, color: 'grey', label: 'Figma' },
+    { icon: <SiPostman />, color: 'grey', label: 'Postman' },
+    { icon: <SiTrello />, color: 'grey', label: 'Trello' },
+    { icon: <SiAdobeaftereffects />, color: 'grey', label: 'After Effects' },
+    { icon: <SiAdobepremierepro />, color: 'grey', label: 'Premiere Pro' },
+    { icon: <SiAdobeillustrator />, color: 'grey', label: 'Illustrator' },
+    { icon: <SiAdobephotoshop />, color: 'grey', label: 'Photoshop' },
+    { icon: <SiAdobexd />, color: 'grey', label: 'Adobe XD' },
+    { icon: <BiLogoMicrosoft />, color: 'grey', label: 'Suite Microsoft' },
 ];
 
 export default function AboutPage() {
@@ -67,154 +54,143 @@ export default function AboutPage() {
                 {/* Hero Section */}
                 <header className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
                     <div className="flex justify-center w-full lg:w-1/3">
-                        {/* Profile Image */}
                         <div className="relative w-40 h-40 rounded-full overflow-hidden">
-                            <img
+                            <Image
                                 src="/noah.jpeg"
                                 alt="Mon portrait"
-                                className="object-cover w-full h-full"
+                                layout="fill"
+                                objectFit="cover"
+                                priority
                             />
                         </div>
                     </div>
                     <div className="lg:w-2/3 lg:pl-12 text-center lg:text-left">
-                        {/* Name and Title */}
                         <h1 className="text-4xl sm:text-5xl font-bold text-white">Noah DEKEYZER</h1>
-                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">2nd year student of BTS SIO SLAM</p>
-                        {/* Social Media Links */}
+                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">2nd year student in BTS SIO SLAM</p>
+
                         <div className="flex space-x-8 mt-6 justify-center lg:justify-start">
-                            <a
-                                href="https://twitter.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-grey-400 transition-colors text-lg sm:text-xl"
-                            >
-                                Twitter
-                            </a>
-                            <a
+                            <Link
                                 href="https://linkedin.com"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-grey-600 transition-colors text-lg sm:text-xl"
+                                className="text-gray-400 hover:text-gray-600 transition-colors text-lg sm:text-xl"
                             >
                                 LinkedIn
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="https://github.com"
                                 target="_blank"
-                                rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-gray-500 transition-colors text-lg sm:text-xl"
                             >
                                 GitHub
-                            </a>
+                            </Link>
                         </div>
 
-                        {/* Short description */}
                         <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
-                            Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals.
-                            I am always looking for new challenges and learning opportunities.
+                            Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals. I am always looking for new challenges and learning opportunities.
                         </p>
                     </div>
                 </header>
 
-                {/* Work Experience Section */}
-                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
-                    <div className="space-y-8 w-full lg:w-2/3">
-                        <h2 className="text-3xl font-semibold text-white">Profesionnel Experiences</h2>
+                {/* Experience Section */}
+                <section className="mt-16 lg:pl-12">
+                    <h2 className="text-3xl font-semibold mb-8">Professional Experiences</h2>
 
-                        {/* Expérience 1 */}
-                        <div className="p-6">
+                    <div className="space-y-12">
+                        <div className="p-6 border border-gray-700 rounded-lg">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-6">
-                                    <div className="w-12 h-12 rounded-full overflow-hidden">
-                                        <img
+                                    <div className="w-12 h-12 relative">
+                                        <Image
                                             src="/logo-lbp.png"
                                             alt="La Banque Postale"
-                                            className="object-contain w-full h-full"
+                                            layout="fill"
+                                            objectFit="contain"
                                         />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white">La Banque Postale</h3>
-                                        <p className="text-grey-400">Internship - Project Manager</p>
+                                        <h3 className="text-xl font-bold">La Banque Postale</h3>
+                                        <p className="text-gray-400">Internship – Project Manager</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-400">January 2025 - February 2025</p>
+                                <p className="text-gray-400">January 2025 – February 2025</p>
                             </div>
-                            <ul className="list-disc list-inside space-y-3 mt-4 text-gray-300">
-                                <li>Management of planning and execution of technical projects.</li>
-                                <li>Reporting creation.</li>
-                                <li>Monitoring performance indicators and deadlines to ensure timely delivery.</li>
+                            <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                                <li>Managed project planning and technical execution.</li>
+                                <li>Created project reporting tools.</li>
+                                <li>Tracked KPIs and timelines for project delivery.</li>
                             </ul>
                         </div>
 
-                        {/* Expérience 2 */}
-                        <div className="p-6">
+                        <div className="p-6 border border-gray-700 rounded-lg">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-6">
-                                    <div className="w-12 h-12 rounded-full overflow-hidden">
-                                        <img
-                                            src="logo-gts.png"
-                                            alt="Logo GET STUFF"
-                                            className="object-contain w-full h-full"
+                                    <div className="w-12 h-12 relative">
+                                        <Image
+                                            src="/logo-gts.png"
+                                            alt="Get Stuff"
+                                            layout="fill"
+                                            objectFit="contain"
                                         />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white">Get Stuff</h3>
-                                        <p className="text-grey-400"> Internship - Fullstack Devlopper</p>
+                                        <h3 className="text-xl font-bold">Get Stuff</h3>
+                                        <p className="text-gray-400">Internship – Fullstack Developer</p>
                                     </div>
                                 </div>
                                 <p className="text-gray-400">June 2024</p>
                             </div>
-                            <ul className="list-disc list-inside space-y-3 mt-4 text-gray-300">
-                                <li>Design and development of a BackOffice application for stock management.</li>
-                                <li>Creation of the company's online presence.</li>
-                                <li>Stock management, customer relations, marketing, and sales.</li>
+                            <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                                <li>Designed and developed a back-office application for stock management.</li>
+                                <li>Created the company's online presence.</li>
+                                <li>Participated in stock, customer, marketing, and sales operations.</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
                 {/* Studies Section */}
-                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
-                    <div className="space-y-8 w-full lg:w-2/3">
-                        <h2 className="text-3xl font-semibold text-white">Studies</h2>
-                        <div className="p-8">
-                            <h3 className="text-2xl font-semibold text-white">BTS SIO - Lycée Général et Technologique Gabriel Fauré, Annecy</h3>
-                            <p className="text-gray-400 mt-1">2023 - 2025</p>
+                <section className="mt-16 lg:pl-12">
+                    <h2 className="text-3xl font-semibold mb-8">Studies</h2>
+
+                    <div className="space-y-12">
+                        <div className="p-6">
+                            <h3 className="text-2xl font-semibold">BTS SIO – Lycée Gabriel Fauré, Annecy</h3>
+                            <p className="text-gray-400 mt-1">2023 – 2025</p>
                             <p className="text-gray-300 mt-4">
-                                Specialization in software development, database management, and system architecture.
+                                Specializing in software development, databases, and system architecture.
                             </p>
                         </div>
 
-                        <div className="p-8">
-                            <h3 className="text-2xl font-semibold text-white">BAC STMG - Lycée Général et Technologique Charles Baudelaire, Annecy</h3>
-                            <p className="text-gray-400 mt-1">2014 - 2017</p>
+                        <div className="p-6">
+                            <h3 className="text-2xl font-semibold">BAC STMG – Lycée Charles Baudelaire, Annecy</h3>
+                            <p className="text-gray-400 mt-1">2014 – 2017</p>
                             <p className="text-gray-300 mt-4">
-                                Baccalaureate in Sciences and Technologies of Management and Management, specializing in Information System Management as well as
-                                the Cinema Audiovisual option.
+                                Specialized in information systems management and cinema & audiovisual studies.
                             </p>
                         </div>
                     </div>
                 </section>
 
-                <section className="mt-16 flex flex-col lg:flex-row lg:w-full lg:pl-12 lg:text-left">
-                    <div className="space-y-8 w-full lg:w-2/3">
-                        <h2 className="text-3xl font-semibold text-white">Languages and Skills</h2>
-                        <div className="p-8">
-                            <h3 className="text-2xl font-semibold text-white">Languages</h3>
-                            <ul className="list-disc list-inside space-y-3 mt-4 text-gray-300">
-                                <li>French: Native language</li>
-                                <li>English: Intermediate (B1)</li>
-                            </ul>
-                        </div>
+                {/* Skills Section */}
+                <section className="mt-16 lg:pl-12">
+                    <h2 className="text-3xl font-semibold text-white mb-6">Languages and Skills</h2>
 
-                        <div>
-                            <h2 className="text-3xl font-semibold text-white mb-6">Languages et Frameworks</h2>
-                            <GlassIcons items={languageItems} />
-                        </div>
-                        <div>
-                            <h2 className="text-3xl font-semibold text-white mb-6">Tools and Applications</h2>
-                            <GlassIcons items={toolsItems} />
-                        </div>
+                    <div className="p-6">
+                        <h3 className="text-2xl font-semibold">Languages</h3>
+                        <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                            <li>French: Native</li>
+                            <li>English: Intermediate (B1)</li>
+                        </ul>
+                    </div>
+
+                    <div className="p-6">
+                        <h3 className="text-2xl font-semibold mb-4">Languages & Frameworks</h3>
+                        <GlassIcons items={languageItems} />
+                    </div>
+
+                    <div className="p-6">
+                        <h3 className="text-2xl font-semibold mb-4">Tools & Applications</h3>
+                        <GlassIcons items={toolsItems} />
                     </div>
                 </section>
             </main>
