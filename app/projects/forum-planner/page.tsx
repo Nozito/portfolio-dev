@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { Navigation } from "../../components/nav";
-import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: "Forum Planner",
@@ -18,113 +17,81 @@ export default function ForumPlannerPage() {
                         Forum Planner
                     </h1>
                     <p className="text-zinc-400">
-                        Outil de planification de forums et gestion de créneaux horaires de visite pour groupes.
+                        Révolutionnez l’organisation de vos forums avec une solution intuitive de gestion des réservations de stands.
                     </p>
                 </header>
 
                 <section className="space-y-6 text-zinc-300">
                     <p>
-                        Forum Planner est une application web conçue pour organiser les visites de groupes scolaires ou professionnels
-                        sur des événements (forums, salons, journées portes ouvertes).
+                        ForumPlanner est une application web conçue pour simplifier la gestion des événements tels que les forums, salons ou journées portes ouvertes.
+                        Elle permet aux organisateurs de planifier les stands disponibles, de définir des créneaux de visite, et d’offrir aux groupes une interface claire pour réserver et modifier leurs inscriptions.
                     </p>
                     <p>
-                        Elle permet de planifier les stands et ateliers disponibles, définir des créneaux de visite, et permettre l’inscription
-                        de groupes sur ces créneaux en ligne.
+                        Contrairement aux outils classiques comme Google Forms, ForumPlanner offre une gestion centralisée, une visualisation claire des disponibilités et une gestion fine des rôles utilisateurs.
                     </p>
-                    <p>
-                        L’objectif est de fluidifier l’organisation de ces événements et de garantir un accueil structuré pour les visiteurs.
-                    </p>
+                </section>
+
+                <section className="pt-8 border-t border-zinc-800">
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Fonctionnalités principales</h2>
+                    <ul className="list-disc list-inside text-zinc-400 space-y-2">
+                        <li>Réservation rapide des stands via une interface fluide et responsive.</li>
+                        <li>Gestion des créneaux horaires, intervenants et salles.</li>
+                        <li>Authentification et gestion des rôles (organisateurs, responsables de groupes, participants).</li>
+                        <li>Vue d’ensemble de tous les stands et leur statut (disponible, réservé).</li>
+                        <li>Modification/annulation des réservations en temps réel.</li>
+                    </ul>
+                </section>
+
+                <section className="pt-8 border-t border-zinc-800">
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Rôles utilisateurs</h2>
+                    <div className="space-y-4 text-zinc-300">
+                        <p><strong>Organisateurs :</strong> Création des stands, consultation des réservations, gestion globale des événements.</p>
+                        <p><strong>Responsables de groupes :</strong> Réservation et modification de créneaux pour leur groupe. Interface dédiée et simplifiée.</p>
+                        <p><strong>Participants :</strong> Consultation des stands disponibles et des réservations du groupe.</p>
+                    </div>
                 </section>
 
                 <section className="pt-8 border-t border-zinc-800">
                     <h2 className="text-xl font-semibold text-zinc-100 mb-4">Technologies utilisées</h2>
                     <ul className="list-disc list-inside text-zinc-400 space-y-1">
-                        <li>Html</li>
+                        <li>HTML</li>
                         <li>Tailwind CSS</li>
-                        <li>Php</li>
-                        <li>Sql</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
                     </ul>
                 </section>
 
                 <section className="pt-8 border-t border-zinc-800">
-                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Application Web</h2>
-                    <div className="space-y-6 text-zinc-300">
-                        <h3 className="text-lg font-semibold text-zinc-100">Fonctionnalités principales</h3>
-                        <ul className="list-disc list-inside">
-                            <li>Création et gestion d’événements (forums, salons)</li>
-                            <li>Définition de créneaux horaires et attribution des stands</li>
-                            <li>Inscription de groupes sur des créneaux</li>
-                            <li>Vue calendrier de la répartition des groupes</li>
-                            <li>Tableau de bord des inscriptions et présences</li>
-                        </ul>
-
-                        <h3 className="text-lg font-semibold text-zinc-100">Ergonomie & accessibilité</h3>
-                        <p>
-                            L’interface a été conçue pour être accessible aux organisateurs comme aux enseignants/chefs de groupe, avec
-                            une attention portée à la simplicité de navigation et à la rapidité de la réservation.
-                        </p>
-                    </div>
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Conception & Réalisation</h2>
+                    <ul className="list-disc list-inside space-y-4 text-zinc-300">
+                        <li><strong>Phase de conception :</strong> Réalisation de maquettes UI/UX avec un focus sur la clarté et la fluidité d’utilisation.</li>
+                        <li><strong>Structuration technique :</strong> Mise en place d’une architecture claire et modulaire, choix des outils adaptés au cahier des charges.</li>
+                        <li><strong>Développement :</strong> Implémentation itérative des fonctionnalités définies dans le backlog, tests et ajustements continus.</li>
+                        <li><strong>Finalisation :</strong> Responsive design, tests utilisateurs, validation fonctionnelle complète, déploiement de l’application.</li>
+                    </ul>
                 </section>
 
                 <section className="pt-8 border-t border-zinc-800">
-                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">API & Architecture</h2>
-                    <div className="space-y-6 text-zinc-300">
-                        <h3 className="text-lg font-semibold text-zinc-100">Endpoints REST</h3>
-                        <p>
-                            L’API REST permet la gestion des entités principales (événements, créneaux, stands, groupes). L’accès est sécurisé
-                            avec authentification JWT et gestion des rôles (administrateur, organisateur, invité).
-                        </p>
-
-                        <h3 className="text-lg font-semibold text-zinc-100">Base de données & modèle</h3>
-                        <p>
-                            Une modélisation complète est disponible dans le diagramme de classe, structurant les entités autour de :
-                            <ul className="list-disc list-inside mt-2">
-                                <li>Événement</li>
-                                <li>Stand</li>
-                                <li>Créneau horaire</li>
-                                <li>Groupe</li>
-                                <li>Inscription</li>
-                            </ul>
-                        </p>
-                        <p>
-                            Voir le diagramme complet et le backlog sur <a href="https://github.com/users/zet74prof/projects/13/views/1" className="text-blue-400 underline" target="_blank">le GitHub du projet</a>.
-                        </p>
-                    </div>
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Apprentissages et bilan</h2>
+                    <p className="text-zinc-300">
+                        Ce projet m’a permis de conduire un développement de bout en bout, en appliquant des pratiques de gestion de projet concrètes.
+                        Il m’a donné l’occasion de développer mes compétences en conception d’interface, structuration d’un produit complet, et compréhension des attentes utilisateurs dans un cadre réaliste.
+                    </p>
                 </section>
-
-                <section className="px-6 py-12 bg-gray-100 mt-16">
-                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Aperçu de l'application</h2>
-                    <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/forum-planner-dashboard.jpg"
-                                alt="Tableau de bord Forum Planner"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
+                <section className="pt-8 border-t border-zinc-800">
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Captures d’écran</h2>
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div className="overflow-hidden rounded-xl border border-zinc-700">
+                            <img src="/images/forum-planner/screenshot1.png" alt="Aperçu de l'interface - Accueil" className="w-full h-auto object-cover" />
                         </div>
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/forum-planner-schedule.jpg"
-                                alt="Planification des créneaux"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
+                        <div className="overflow-hidden rounded-xl border border-zinc-700">
+                            <img src="/images/forum-planner/screenshot2.png" alt="Aperçu de l'interface - Réservation" className="w-full h-auto object-cover" />
                         </div>
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/forum-planner-group.jpg"
-                                alt="Fiche groupe"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
-                        </div>
+                        {/* Ajoute d'autres images si besoin */}
                     </div>
                 </section>
             </main>
+
         </div>
     );
 }

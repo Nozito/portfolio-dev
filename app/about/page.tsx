@@ -8,6 +8,7 @@ import {
     SiPostman, SiTrello, SiGithub, SiPhpstorm, SiPhp, SiSymfony, SiMysql,
     SiTailwindcss, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator,
     SiAdobephotoshop, SiAdobexd,
+    SiLinkedin,
 } from 'react-icons/si';
 import GlassIcons from '../components/GlassIcons';
 import Link from 'next/link';
@@ -42,7 +43,7 @@ const toolsItems = [
 
 export default function AboutPage() {
     return (
-        <div className="bg-dark text-white">
+        <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 text-white">
             <Navigation />
             <main className="max-w-screen-xl mx-auto px-4 py-24">
                 {/* Hero Section */}
@@ -50,10 +51,12 @@ export default function AboutPage() {
                     <div className="flex justify-center w-full lg:w-1/3">
                         <div className="relative w-40 h-40 rounded-full overflow-hidden">
                             <Image
-                                src="/noah.jpeg"
+                                src="/noah.jpg"
                                 alt="Mon portrait"
                                 fill
                                 style={{ objectFit: 'cover' }}
+                                className="rounded-full"
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                                 priority
                             />
                         </div>
@@ -66,22 +69,40 @@ export default function AboutPage() {
                             <Link
                                 href="https://linkedin.com"
                                 target="_blank"
-                                className="text-gray-400 hover:text-gray-600 transition-colors text-lg sm:text-xl"
+                                className="text-gray-400 hover:text-gray-600 transition-colors text-lg sm:text-xl flex items-center space-x-2"
                             >
-                                LinkedIn
+                                <SiLinkedin className="text-gray-400 hover:text-gray-600 text-2xl" />
+                                <span>LinkedIn</span>
                             </Link>
                             <Link
                                 href="https://github.com"
                                 target="_blank"
-                                className="text-gray-400 hover:text-gray-500 transition-colors text-lg sm:text-xl"
+                                className="text-gray-400 hover:text-gray-500 transition-colors text-lg sm:text-xl flex items-center space-x-2"
                             >
-                                GitHub
+                                <SiGithub className="text-gray-400 hover:text-gray-500 text-2xl" />
+                                <span>GitHub</span>
                             </Link>
                         </div>
 
                         <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
                             Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals. I am always looking for new challenges and learning opportunities.
                         </p>
+
+                        <div className="mt-6 ">
+                            <Link
+                                href="/cv.pdf"
+                                target="_blank"
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg animate-pulse hover:brightness-110 hover:shadow-xl transition-all duration-900"                            >
+                                My CV
+                            </Link>
+                            {/* <Link
+                                href="/evaluation-grille.pdf"
+                                target="_blank"
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900 ml-4"
+                            >
+                                Evaluation Grille
+                            </Link> */}
+                        </div>
                     </div>
                 </header>
 
@@ -93,7 +114,7 @@ export default function AboutPage() {
                         <div className="p-6 border border-gray-700 rounded-lg">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-6">
-                                    <div className="w-12 h-12 relative">
+                                    <div className="w-16 h-16 relative rounded-full overflow-hidden">
                                         <Image
                                             src="/logo-lbp.png"
                                             alt="La Banque Postale"
@@ -102,7 +123,15 @@ export default function AboutPage() {
                                         />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold">La Banque Postale</h3>
+                                        <h3 className="text-xl font-bold">
+                                            <Link
+                                                href="https://www.labanquepostale.fr"
+                                                target="_blank"
+                                                className="text-white hover:underline"
+                                            >
+                                                La Banque Postale
+                                            </Link>
+                                        </h3>
                                         <p className="text-gray-400">Internship – Project Manager</p>
                                     </div>
                                 </div>
@@ -118,7 +147,7 @@ export default function AboutPage() {
                         <div className="p-6 border border-gray-700 rounded-lg">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-6">
-                                    <div className="w-12 h-12 relative">
+                                    <div className="w-20 h-20 relative rounded-full overflow-hidden">
                                         <Image
                                             src="/logo-gts.png"
                                             alt="Get Stuff"
@@ -157,7 +186,7 @@ export default function AboutPage() {
 
                         <div className="p-6">
                             <h3 className="text-2xl font-semibold">BAC STMG – Lycée Charles Baudelaire, Annecy</h3>
-                            <p className="text-gray-400 mt-1">2014 – 2017</p>
+                            <p className="text-gray-400 mt-1">2020 – 2023</p>
                             <p className="text-gray-300 mt-4">
                                 Specialized in information systems management and cinema & audiovisual studies.
                             </p>

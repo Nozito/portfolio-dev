@@ -21,8 +21,8 @@ export default function GSBMobilePage() {
                     </p>
                 </header>
 
-                <section className="space-y-5 text-zinc-300 pt-4">
-                    <p>
+                <section className="space-y-5 text-zinc-300 pt-4 text-justify">
+                    <p >
                         Le laboratoire Galaxy Swiss Bourdin souhaitait doter ses visiteurs médicaux d’une <strong>application mobile</strong> leur permettant de centraliser les
                         comptes-rendus de visites réalisées auprès des praticiens. Cette base d’informations vise à améliorer la communication interne, le
                         suivi de l'activité terrain, ainsi que l’élaboration stratégique des campagnes médicales.
@@ -32,9 +32,9 @@ export default function GSBMobilePage() {
                     </p>
                 </section>
 
-                <section className="pt-8 border-t border-zinc-800">
+                <section className="pt-8 border-t border-zinc-800 ">
                     <h2 className="text-xl font-semibold text-zinc-100 mb-4">Fonctionnalités principales</h2>
-                    <ul className="list-disc list-inside text-zinc-400 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-400 space-y-1 ">
                         <li>Saisie des rapports de visites (motif, date, bilan, produits présentés, échantillons donnés)</li>
                         <li>Fiches produits détaillées (effets, posologie, contre-indications, interactions, famille…)</li>
                         <li>Fiches praticiens enrichies avec données d’influence et coordonnées</li>
@@ -65,7 +65,7 @@ export default function GSBMobilePage() {
                     </ul>
                 </section>
 
-                <section className="pt-8 border-t border-zinc-800">
+                <section className="pt-8 border-t border-zinc-800 text-justify">
                     <h2 className="text-xl font-semibold text-zinc-100 mb-4">Processus de conception</h2>
                     <div className="space-y-6 text-zinc-300">
                         <h3 className="text-lg font-semibold text-zinc-100">1. Analyse des besoins</h3>
@@ -94,42 +94,93 @@ export default function GSBMobilePage() {
                     </div>
                 </section>
 
-                {/* Image Gallery */}
-                <section className="px-6 py-12 bg-gray-100 mt-16">
-                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Aperçu de l'application</h2>
-                    <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/gsb-visite-home.jpg"
-                                alt="Accueil Application"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
-                        </div>
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/gsb-visite-saisie.jpg"
-                                alt="Saisie d’un compte-rendu"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
-                        </div>
-                        <div className="relative w-full h-64">
-                            <Image
-                                src="/images/gsb-visite-profil.jpg"
-                                alt="Profil d’un praticien"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg shadow-lg"
-                            />
-                        </div>
+                <section className="pt-8 border-t border-zinc-800 text-justify">
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Fonctionnalités</h2>
+                    <div className="space-y-6 text-zinc-300">
+                        <h3 className="text-lg font-semibold text-zinc-100">1. Connexion sécurisée</h3>
+                        <p>
+                            L’application permet aux utilisateurs de se connecter via un système d’authentification sécurisé. Les données sont chiffrées et
+                            protégées par des protocoles de sécurité avancés.
+                        </p>
+                        <Image
+                            src="/Login.png"
+                            alt="Connexion sécurisée"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <p className="text-zinc-400">
+                            L’authentification est gérée par un système de jetons JWT, garantissant la sécurité des échanges entre l’application et le serveur.
+                        </p>
+                        <h3 className="text-lg font-semibold text-zinc-100">2. Liste des praticiens</h3>
+                        <p>
+                            L’application permet de consulter la liste des praticiens. Chaque fiche praticien contient des informations détaillées sur le professionnel de santé,
+                             ainsi que les produits présentés lors des visites et les visites elles-même.
+                        </p>
+                        <Image
+                            src="/Praticiendetail.png"
+                            alt="Liste des praticiens"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <h3 className="text-lg font-semibold text-zinc-100">3. Gestion des visite</h3>
+                        <p>
+                            L’application permet de créer, modifier et consulter les rapports de visites. Poour chaque praticien, on peut consulter les visites effectuées.
+                            Les visites sont affichées avec la date, le motif et un commentaire.
+                        </p>
+                        <Image
+                            src="/MAJVisite.png"
+                            alt="Gestion des visites"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <p className="text-zinc-400">
+                            Exemple de mise à jour d'une visite. L'application permet de modifier les informations de la visite, y compris le motif, la date et les commentaires.
+                        </p>
+                        <h3 className="text-lg font-semibold text-zinc-100">4. Création d'une nouvelle visite</h3>
+                        <p>
+                            L’application permet de créer une nouvelle visite en remplissant un formulaire. Les utilisateurs peuvent sélectionner le praticien,
+                            le motif, la date de la visite et ajouter des commentaires.
+                        </p>
+                        <Image
+                            src="/Newvisite.png"
+                            alt="Création d'une nouvelle visite"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <h3 className="text-lg font-semibold text-zinc-100">5. Catalogue de Médicaments</h3>
+                        <p>
+                            L’application permet de consulter le catalogue des médicaments du laboratoire. Chaque fiche produit contient des informations
+                            détaillées sur le médicament, y compris les effets secondaires, la posologie, les contre-indications et les interactions.
+                        </p>
+                        <Image
+                            src="/Medicaments.png"
+                            alt="Catalogue de Médicaments"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <p className="text-zinc-400">
+                            Exemple de catalogue de médicaments. L'application permet de consulter les médicaments disponibles, ainsi que leurs détails.
+                        </p>
+                        <Image
+                            src="/MedicamentsDetail.png"
+                            alt="Détails du médicament"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-lg mt-4"
+                        />
+                        <p className="text-zinc-400">
+                            Exemple de détail d'un médicament. L'application permet de consulter les effets secondaires, la posologie et les contre-indications.
+                        </p>
                     </div>
                 </section>
 
                 {/* API REST - Backend */}
-                <section className="pt-32 border-t border-zinc-800">
+                <section className="pt-32 border-t border-zinc-800 text-justify">
                     <h2 className="text-3xl font-bold tracking-tight text-zinc-100 mb-6">Architecture & API</h2>
 
                     <div className="space-y-6 text-zinc-300">
@@ -142,7 +193,6 @@ export default function GSBMobilePage() {
                         <ul className="list-disc list-inside text-zinc-400 space-y-1">
                             <li>Backend développé en Node.js (ExpressJs)</li>
                             <li>Base de données : Mongo DB</li>
-                            <li>Gestion des rôles : visiteur, délégué, responsable</li>
                             <li>API REST sécurisée avec JWT</li>
                             <li>Tests unitaires et fonctionnels avec Postman</li>
                             <li>Contrôle de version avec GIT</li>
@@ -152,9 +202,9 @@ export default function GSBMobilePage() {
 
                         <h3 className="text-xl font-semibold text-zinc-100">Ressources exposées par l’API</h3>
                         <ul className="list-disc list-inside text-zinc-400 space-y-1">
-                            <li><code>/auth</code> : inscription, connexion sécurisée (JWT)</li>
-                            <li><code>/visites</code> : création, mise à jour, récupération des rapports</li>
-                            <li><code>/praticiens</code> : consultation, recherche filtrée</li>
+                            <li><code>/login</code> : connexion sécurisée (JWT)</li>
+                            <li><code>/visites</code> : création, mise à jour, suppression</li>
+                            <li><code>/praticiens</code> : consultation, dernières visites</li>
                             <li><code>/medicaments</code> : liste des médicaments, détails</li>
                         </ul>
 
