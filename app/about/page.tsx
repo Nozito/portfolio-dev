@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { Metadata } from 'next';
 import { Navigation } from '../components/nav';
 import { BiLogoVisualStudio, BiLogoBootstrap, BiLogoMicrosoft } from 'react-icons/bi';
 import {
@@ -12,11 +11,6 @@ import {
 } from 'react-icons/si';
 import GlassIcons from '../components/GlassIcons';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-    title: 'À propos de moi',
-    description: 'Découvrez mon parcours, mes expériences et mes passions.',
-};
 
 const languageItems = [
     { icon: <SiHtml5 />, color: 'grey', label: 'HTML' },
@@ -58,8 +52,8 @@ export default function AboutPage() {
                             <Image
                                 src="/noah.jpeg"
                                 alt="Mon portrait"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                style={{ objectFit: 'cover' }}
                                 priority
                             />
                         </div>
@@ -103,8 +97,8 @@ export default function AboutPage() {
                                         <Image
                                             src="/logo-lbp.png"
                                             alt="La Banque Postale"
-                                            layout="fill"
-                                            objectFit="contain"
+                                            fill
+                                            style={{ objectFit: 'contain' }}
                                         />
                                     </div>
                                     <div>
@@ -128,8 +122,8 @@ export default function AboutPage() {
                                         <Image
                                             src="/logo-gts.png"
                                             alt="Get Stuff"
-                                            layout="fill"
-                                            objectFit="contain"
+                                            fill
+                                            style={{ objectFit: 'contain' }}
                                         />
                                     </div>
                                     <div>
