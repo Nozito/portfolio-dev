@@ -84,7 +84,7 @@ export default function AboutPage() {
                             </Link>
                         </div>
 
-                        <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto sm:text-left text-justify sm:text-justify-auto">
                             Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals. I am always looking for new challenges and learning opportunities.
                         </p>
 
@@ -93,15 +93,22 @@ export default function AboutPage() {
                                 href="/cv.pdf"
                                 target="_blank"
                                 className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg animate-pulse hover:brightness-110 hover:shadow-xl transition-all duration-900"                            >
-                                My CV
+                                Mon CV
                             </Link>
-                            {/* <Link
-                                href="/evaluation-grille.pdf"
+                            <Link
+                                href="/Tabsynth.pdf"
                                 target="_blank"
                                 className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900 ml-4"
                             >
-                                Evaluation Grille
-                            </Link> */}
+                                Tableau de Synthèse
+                            </Link>
+                            <Link
+                                href="/veille-info.pdf"
+                                target="_blank"
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900 ml-4"
+                            >
+                                Veille Informationnelle
+                            </Link>
                         </div>
                     </div>
                 </header>
@@ -112,9 +119,9 @@ export default function AboutPage() {
 
                     <div className="space-y-12">
                         <div className="p-6 border border-gray-700 rounded-lg">
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center space-x-6">
-                                    <div className="w-16 h-16 relative rounded-full overflow-hidden">
+                            <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between space-y-4 lg:space-y-0">
+                                <div className="flex items-center space-x-6 ml-0">
+                                    <div className="w-16 h-16 sm:w-16 sm:h-16 relative rounded-full overflow-hidden">
                                         <Image
                                             src="/logo-lbp.png"
                                             alt="La Banque Postale"
@@ -132,10 +139,10 @@ export default function AboutPage() {
                                                 La Banque Postale
                                             </Link>
                                         </h3>
-                                        <p className="text-gray-400">Internship – Project Manager</p>
+                                        <p className="text-gray-400 text-base">Internship – Project Manager</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-400">January 2025 – February 2025</p>
+                                <p className="text-gray-400 text-sm lg:text-base">January 2025 – February 2025</p>
                             </div>
                             <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
                                 <li>Managed project planning and technical execution.</li>
@@ -145,9 +152,9 @@ export default function AboutPage() {
                         </div>
 
                         <div className="p-6 border border-gray-700 rounded-lg">
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center space-x-6">
-                                    <div className="w-20 h-20 relative rounded-full overflow-hidden">
+                            <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between space-y-4 lg:space-y-0">
+                                <div className="flex items-center space-x-6 ml-0">
+                                    <div className="w-24 h-24 sm:w-20 sm:h-20 relative rounded-full overflow-hidden">
                                         <Image
                                             src="/logo-gts.png"
                                             alt="Get Stuff"
@@ -157,10 +164,10 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold">Get Stuff</h3>
-                                        <p className="text-gray-400">Internship – Fullstack Developer</p>
+                                        <p className="text-gray-400 text-base">Internship – Fullstack Developer</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-400">June 2024</p>
+                                <p className="text-gray-400 text-sm lg:text-base">June 2024</p>
                             </div>
                             <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
                                 <li>Designed and developed a back-office application for stock management.</li>

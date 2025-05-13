@@ -9,6 +9,7 @@ interface ParticlesProps {
 	staticity?: number;
 	ease?: number;
 	refresh?: boolean;
+	interactive?: boolean;
 }
 
 export default function Particles({
