@@ -88,24 +88,25 @@ export default function AboutPage() {
                             Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals. I am always looking for new challenges and learning opportunities.
                         </p>
 
-                        <div className="mt-6 ">
+                        <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
                             <Link
                                 href="/cv.pdf"
                                 target="_blank"
-                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg animate-pulse hover:brightness-110 hover:shadow-xl transition-all duration-900"                            >
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg animate-pulse hover:brightness-110 hover:shadow-xl transition-all duration-900"
+                            >
                                 Mon CV
                             </Link>
                             <Link
                                 href="/Tabsynth.pdf"
                                 target="_blank"
-                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900 ml-4"
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900"
                             >
                                 Tableau de Synthèse
                             </Link>
                             <Link
                                 href="/veille-info.pdf"
                                 target="_blank"
-                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900 ml-4"
+                                className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900"
                             >
                                 Veille Informationnelle
                             </Link>

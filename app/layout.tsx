@@ -10,13 +10,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "dekeyzer.fr",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    description: "Noah's Portfolio",
     url: "https://dekeyzer.fr",
     siteName: "dekeyzer.fr",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "public/n.png",
         width: 1920,
         height: 1080,
       },
@@ -58,7 +57,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
-        {/* Analytics code removed */}
       </head>
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}
