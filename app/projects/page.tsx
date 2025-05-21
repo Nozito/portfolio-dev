@@ -37,10 +37,10 @@ const projects: Project[] = [
     _id: "3",
     title: "Forum Cybersécurité",
     description: "Forum Cybersécurité sur 2 ans, dans un lycée et un collège. Le but est de sensibiliser les élèves à la cybersécurité.",
-    date: "2023-12-17",
+    date: "2023-12-18",
     type: "project",
     body: "Body content of the project",
-    slug: "",
+    slug: "forumcyber",
   },
   {
     _id: "4",
@@ -49,7 +49,7 @@ const projects: Project[] = [
     date: "2024-07-01",
     type: "project",
     body: "Body content of the project",
-    slug: "",
+    slug: "forum-planner",
   },
   {
     _id: "5",
@@ -58,7 +58,7 @@ const projects: Project[] = [
     date: "2024-11-06",
     type: "project",
     body: "Body content of the project",
-    slug: "",
+    slug: "time2watch",
   },
   {
     _id: "6",
@@ -67,7 +67,7 @@ const projects: Project[] = [
     date: "2025-06-01",
     type: "project",
     body: "Body content of the project",
-    slug: "",
+    slug: "apdu113",
   },
 ];
 
