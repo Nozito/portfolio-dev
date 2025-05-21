@@ -44,6 +44,7 @@
     "@types/node": "^20.17.32",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.6",
+    "@types/react-icons": "^2.2.7",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "postcss-nesting": "^12.1.5",

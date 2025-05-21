@@ -63,7 +63,7 @@ export default function AboutPage() {
                     </div>
                     <div className="lg:w-2/3 lg:pl-12 text-center lg:text-left">
                         <h1 className="text-4xl sm:text-5xl font-bold text-white">Noah DEKEYZER</h1>
-                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">2nd year student in BTS SIO SLAM</p>
+                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">Etudiant en 2ème année de BTS SIO SLAM</p>
 
                         <div className="flex space-x-8 mt-6 justify-center lg:justify-start">
                             <Link
@@ -85,7 +85,7 @@ export default function AboutPage() {
                         </div>
 
                         <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto sm:text-left text-justify sm:text-justify-auto">
-                            Student in BTS SIO, passionate about web development and project management. I enjoy creating innovative solutions and collaborating with dynamic teams to achieve common goals. I am always looking for new challenges and learning opportunities.
+                            Etudiant en 2ème année de BTS SIO, j'ai acquis des compétences solides en programmation, gestion de projets et design d'interface utilisateur. Je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences et contribuer à des projets innovants.
                         </p>
 
                         <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
@@ -101,14 +101,14 @@ export default function AboutPage() {
                                 target="_blank"
                                 className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900"
                             >
-                                Tableau de Synthèse
+                                Mon Tableau de Synthèse
                             </Link>
                             <Link
                                 href="/veille-info.pdf"
                                 target="_blank"
                                 className="bg-gradient-to-tr from-zinc-800 via-zinc-600 to-zinc-800 text-white px-5 py-2 rounded-xl border border-zinc-400/30 shadow-lg hover:brightness-110 hover:shadow-xl transition-all duration-900"
                             >
-                                Veille Informationnelle
+                                Ma Veille Informationnelle
                             </Link>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
 
                 {/* Experience Section */}
                 <section className="mt-16 lg:pl-12">
-                    <h2 className="text-3xl font-semibold mb-8">Professional Experiences</h2>
+                    <h2 className="text-3xl font-semibold mb-8">Expériences Professionnelles</h2>
 
                     <div className="space-y-12">
                         <div className="p-6 border border-gray-700 rounded-lg">
@@ -140,15 +140,18 @@ export default function AboutPage() {
                                                 La Banque Postale
                                             </Link>
                                         </h3>
-                                        <p className="text-gray-400 text-base">Internship – Project Manager</p>
+                                        <p className="text-gray-400 text-base">Stage – Chef de projet / MOE</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-400 text-sm lg:text-base">January 2025 – February 2025</p>
+                                <p className="text-gray-400 text-sm lg:text-base">Janvier 2025 – Février 2025</p>
                             </div>
                             <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
-                                <li>Managed project planning and technical execution.</li>
-                                <li>Created project reporting tools.</li>
-                                <li>Tracked KPIs and timelines for project delivery.</li>
+                                <li>Gestion de projet et suivi de leurs exécutions.</li>
+                                <li>Création de reportings.</li>
+                                <li>Suivi des indicateurs clés de performance (KPI) et des délais de livraison des projets.</li>
+                                <li>Collaboration avec les équipes de développement pour assurer la qualité des livrables.</li>
+                                <li>Participation à la rédaction de la documentation technique et fonctionnelle.</li>
+                                <li>Participation aux tests des nouvelles fonctionnalités sur les applications mobiles</li>
                             </ul>
                         </div>
 
@@ -165,15 +168,15 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold">Get Stuff</h3>
-                                        <p className="text-gray-400 text-base">Internship – Fullstack Developer</p>
+                                        <p className="text-gray-400 text-base">Stage – Developpeur Fullstack</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-400 text-sm lg:text-base">June 2024</p>
+                                <p className="text-gray-400 text-sm lg:text-base">Juin 2024</p>
                             </div>
                             <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
-                                <li>Designed and developed a back-office application for stock management.</li>
-                                <li>Created the company's online presence.</li>
-                                <li>Participated in stock, customer, marketing, and sales operations.</li>
+                                <li>Création d'une application back-office pour la gestion des stocks.</li>
+                                <li>Missions de communication / marketing, vente et gestion des stocks physiques.</li>
+                                <li>Développement d'un site e-commerce pour l'entreprise.</li>
                             </ul>
                         </div>
                     </div>
@@ -181,14 +184,14 @@ export default function AboutPage() {
 
                 {/* Studies Section */}
                 <section className="mt-16 lg:pl-12">
-                    <h2 className="text-3xl font-semibold mb-8">Studies</h2>
+                    <h2 className="text-3xl font-semibold mb-8">Parcours Scolaire</h2>
 
                     <div className="space-y-12">
                         <div className="p-6">
                             <h3 className="text-2xl font-semibold">BTS SIO – Lycée Gabriel Fauré, Annecy</h3>
                             <p className="text-gray-400 mt-1">2023 – 2025</p>
                             <p className="text-gray-300 mt-4">
-                                Specializing in software development, databases, and system architecture.
+                                Spécialisation en Solutions Logicielles et Applications Métiers (SLAM).
                             </p>
                         </div>
 
@@ -196,7 +199,7 @@ export default function AboutPage() {
                             <h3 className="text-2xl font-semibold">BAC STMG – Lycée Charles Baudelaire, Annecy</h3>
                             <p className="text-gray-400 mt-1">2020 – 2023</p>
                             <p className="text-gray-300 mt-4">
-                                Specialized in information systems management and cinema & audiovisual studies.
+                                Spécialiser en Système d'Information de Gestion (SIG) et en Cinéma-Audiovisuel (CI-AV).
                             </p>
                         </div>
                     </div>
@@ -204,23 +207,23 @@ export default function AboutPage() {
 
                 {/* Skills Section */}
                 <section className="mt-16 lg:pl-12">
-                    <h2 className="text-3xl font-semibold text-white mb-6">Languages and Skills</h2>
+                    <h2 className="text-3xl font-semibold text-white mb-6">Langages and Compétences</h2>
 
                     <div className="p-6">
-                        <h3 className="text-2xl font-semibold">Languages</h3>
+                        <h3 className="text-2xl font-semibold">Langages</h3>
                         <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
-                            <li>French: Native</li>
-                            <li>English: Intermediate (B1)</li>
+                            <li>Français: Natif</li>
+                            <li>Anglais: Intérmédiaire (B1)</li>
                         </ul>
                     </div>
 
                     <div className="p-6">
-                        <h3 className="text-2xl font-semibold mb-4">Languages & Frameworks</h3>
+                        <h3 className="text-2xl font-semibold mb-4">Langages & Frameworks</h3>
                         <GlassIcons items={languageItems} />
                     </div>
 
                     <div className="p-6">
-                        <h3 className="text-2xl font-semibold mb-4">Tools & Applications</h3>
+                        <h3 className="text-2xl font-semibold mb-4">Outils & Applications</h3>
                         <GlassIcons items={toolsItems} />
                     </div>
                 </section>
