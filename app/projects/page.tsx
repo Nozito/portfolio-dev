@@ -18,7 +18,7 @@ const projects: Project[] = [
   {
     _id: "1",
     title: "GSB Frais",
-    description: "Webapp and mobile application for GSB.",
+    description: "Webapp pour GSB Frais. Elle permet aux employés de créer des fiches de frais, et pour les manager et comptables de les valider ou modifier.",
     date: "2025-04-27",
     type: "project",
     body: "Body content of the project",
@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     _id: "2",
     title: "GSB Mobile",
-    description: "Mobile application for GSB.",
+    description: "Application mobile android pour GSB. Ce nouvel outil, permet aux visieurs de référencer leurs visites auprès des praticiens, et d'y avoir accès en temps réel. Ainsi que consultere le catalogue d'échantillons.",
     date: "2025-04-27",
     type: "project",
     body: "Body content of the project",
@@ -35,47 +35,47 @@ const projects: Project[] = [
   },
   {
     _id: "3",
-    title: "Forum Planner",
-    description: "In building...",
-    date: "2024-09-01",
+    title: "Forum Cybersécurité",
+    description: "Forum Cybersécurité sur 2 ans, dans un lycée et un collège. Le but est de sensibiliser les élèves à la cybersécurité.",
+    date: "2023-12-17",
     type: "project",
     body: "Body content of the project",
     slug: "",
   },
-//   {
-//     _id: "4",
-//     title: "Projet A",
-//     description: "Un projet génial à découvrir.",
-//     date: "2025-04-01",
-//     type: "project",
-//     body: "Body content of the project",
-//     slug: "projet-a",
-//   },
-//   {
-//     _id: "5",
-//     title: "Projet B",
-//     description: "Un autre projet cool.",
-//     date: "2025-05-01",
-//     type: "project",
-//     body: "Body content of the project",
-//     slug: "projet-b",
-//   },
-//   {
-//     _id: "6",
-//     title: "Projet C",
-//     description: "Ce projet est en développement.",
-//     date: "2025-06-01",
-//     type: "project",
-//     body: "Body content of the project",
-//     slug: "projet-c",
-//   },
+  {
+    _id: "4",
+    title: "Forum Planner",
+    description: "Application web de reservation et création de forum.",
+    date: "2024-07-01",
+    type: "project",
+    body: "Body content of the project",
+    slug: "",
+  },
+  {
+    _id: "5",
+    title: "Time2Watch",
+    description: "Application Android qui propose un catalogue de séries et films en fonction de la météo.",
+    date: "2024-11-06",
+    type: "project",
+    body: "Body content of the project",
+    slug: "",
+  },
+  {
+    _id: "6",
+    title: "Site vitrine APdu113",
+    description: "Site vitrine pour le rappeur APdu113 (site en cours de création).",
+    date: "2025-06-01",
+    type: "project",
+    body: "Body content of the project",
+    slug: "",
+  },
 ];
 
 const internships = [
   {
     _id: "7",
     title: "GetStuff",
-    description: "Created a back-office application for stock management, communication/marketing, sales, and inventory management.",
+    description: "Création d'une application back-office pour la gestion des stocks. Missions de communication / marketing, vente et gestion des stocks physiques.",
     date: "2023-06-01",
     type: "internship",
     body: "Body content of the internship",
@@ -84,7 +84,7 @@ const internships = [
   {
     _id: "8",
     title: "La Banque Postale",
-    description: "Work on it...",
+    description: "Stage de 2 mois en tant qu'assistant chef de projet. J'ai pu découvrir le monde de la banque et de l'assurance, ainsi que le métier de chef de projet.",
     date: "2025-02-28",
     type: "internship",
     body: "Body content of the internship",
@@ -107,8 +107,8 @@ export default function ProjectsPage() {
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <header className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Projects</h2>
-          <p className="mt-4 text-zinc-400">Some of the projects are from school and some are on my own time.</p>
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Projets</h2>
+          <p className="mt-4 text-zinc-400">Retrouvez tous mes projets, scolaires et personnels.</p>
         </header>
 
         <div className="w-full h-px bg-zinc-800" />
@@ -126,7 +126,7 @@ export default function ProjectsPage() {
                 <p className="mt-4 leading-8 text-zinc-400">{featured.description}</p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block cursor-pointer">
-                    Read more <span aria-hidden="true">&rarr;</span>
+                    Voir plus <span aria-hidden="true">&rarr;</span>
                   </p>
                 </div>
               </article>
@@ -142,7 +142,7 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        {/* <div className="hidden w-full h-px md:block bg-zinc-800" />
+        <div className="hidden w-full h-px md:block bg-zinc-800" />
 
         <section className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3">
           {columns.map((column, idx) => (
@@ -156,14 +156,14 @@ export default function ProjectsPage() {
               ))}
             </div>
           ))}
-        </section> */}
+        </section>
 
         <div className="w-full h-px bg-zinc-800" />
 
         <section>
           <header className="max-w-2xl mx-auto lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Internships</h2>
-            <p className="mt-4 text-zinc-400">Here are some internships I have completed.</p>
+            <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Stages</h2>
+            <p className="mt-4 text-zinc-400">Les stages que j'ai pu effectués.</p>
           </header>
 
           <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
