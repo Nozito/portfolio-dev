@@ -88,7 +88,7 @@ const internships = [
     date: "2025-02-28",
     type: "internship",
     body: "Body content of the internship",
-    slug: "",
+    slug: "la-banque-postale",
   },
 ];
 

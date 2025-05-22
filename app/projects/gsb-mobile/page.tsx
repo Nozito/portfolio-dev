@@ -22,7 +22,7 @@ export default function GSBMobilePage() {
                 </header>
 
                 <section className="space-y-5 text-zinc-300 pt-4 text-justify">
-                    <p >
+                    <p>
                         Le laboratoire Galaxy Swiss Bourdin souhaitait doter ses visiteurs médicaux d’une <strong>application mobile</strong> leur permettant de centraliser les
                         comptes-rendus de visites réalisées auprès des praticiens. Cette base d’informations vise à améliorer la communication interne, le
                         suivi de l'activité terrain, ainsi que l’élaboration stratégique des campagnes médicales.
@@ -32,9 +32,9 @@ export default function GSBMobilePage() {
                     </p>
                 </section>
 
-                <section className="pt-8 border-t border-zinc-800 ">
+                <section className="pt-8 border-t border-zinc-800">
                     <h2 className="text-xl font-semibold text-zinc-100 mb-4">Fonctionnalités principales</h2>
-                    <ul className="list-disc list-inside text-zinc-400 space-y-1 ">
+                    <ul className="list-disc list-inside text-zinc-400 space-y-1">
                         <li>Saisie des rapports de visites (motif, date, bilan, produits présentés, échantillons donnés)</li>
                         <li>Fiches produits détaillées (effets, posologie, contre-indications, interactions, famille…)</li>
                         <li>Fiches praticiens enrichies avec données d’influence et coordonnées</li>
@@ -103,75 +103,79 @@ export default function GSBMobilePage() {
                             protégées par des protocoles de sécurité avancés.
                         </p>
                         <Image
-                            src="/Login.png"
+                            src="/gsb/Login.png"
                             alt="Connexion sécurisée"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
                         <p className="text-zinc-400">
                             L’authentification est gérée par un système de jetons JWT, garantissant la sécurité des échanges entre l’application et le serveur.
                         </p>
+
                         <h3 className="text-lg font-semibold text-zinc-100">2. Liste des praticiens</h3>
                         <p>
                             L’application permet de consulter la liste des praticiens. Chaque fiche praticien contient des informations détaillées sur le professionnel de santé,
-                             ainsi que les produits présentés lors des visites et les visites elles-même.
+                             ainsi que les produits présentés lors des visites et les visites elles-mêmes.
                         </p>
                         <Image
-                            src="/Praticiendetail.png"
+                            src="/gsb/Praticiendetail.png"
                             alt="Liste des praticiens"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
-                        <h3 className="text-lg font-semibold text-zinc-100">3. Gestion des visite</h3>
+
+                        <h3 className="text-lg font-semibold text-zinc-100">3. Gestion des visites</h3>
                         <p>
-                            L’application permet de créer, modifier et consulter les rapports de visites. Poour chaque praticien, on peut consulter les visites effectuées.
+                            L’application permet de créer, modifier et consulter les rapports de visites. Pour chaque praticien, on peut consulter les visites effectuées.
                             Les visites sont affichées avec la date, le motif et un commentaire.
                         </p>
                         <Image
-                            src="/MAJVisite.png"
+                            src="/gsb/MAJVisite.png"
                             alt="Gestion des visites"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
                         <p className="text-zinc-400">
                             Exemple de mise à jour d'une visite. L'application permet de modifier les informations de la visite, y compris le motif, la date et les commentaires.
                         </p>
+
                         <h3 className="text-lg font-semibold text-zinc-100">4. Création d'une nouvelle visite</h3>
                         <p>
                             L’application permet de créer une nouvelle visite en remplissant un formulaire. Les utilisateurs peuvent sélectionner le praticien,
                             le motif, la date de la visite et ajouter des commentaires.
                         </p>
                         <Image
-                            src="/Newvisite.png"
+                            src="/gsb/Newvisite.png"
                             alt="Création d'une nouvelle visite"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
+
                         <h3 className="text-lg font-semibold text-zinc-100">5. Catalogue de Médicaments</h3>
                         <p>
                             L’application permet de consulter le catalogue des médicaments du laboratoire. Chaque fiche produit contient des informations
                             détaillées sur le médicament, y compris les effets secondaires, la posologie, les contre-indications et les interactions.
                         </p>
                         <Image
-                            src="/Medicaments.png"
+                            src="/gsb/Medicaments.png"
                             alt="Catalogue de Médicaments"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
                         <p className="text-zinc-400">
                             Exemple de catalogue de médicaments. L'application permet de consulter les médicaments disponibles, ainsi que leurs détails.
                         </p>
                         <Image
-                            src="/MedicamentsDetail.png"
+                            src="/gsb/MedicamentsDetail.png"
                             alt="Détails du médicament"
                             width={300}
                             height={200}
-                            className="rounded-lg shadow-lg mt-4"
+                            className="rounded-lg shadow-lg mt-4 max-w-full h-auto"
                         />
                         <p className="text-zinc-400">
                             Exemple de détail d'un médicament. L'application permet de consulter les effets secondaires, la posologie et les contre-indications.

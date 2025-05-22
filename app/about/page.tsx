@@ -148,7 +148,6 @@ export default function AboutPage() {
                             <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
                                 <li>Gestion de projet et suivi de leurs exécutions.</li>
                                 <li>Création de reportings.</li>
-                                <li>Suivi des indicateurs clés de performance (KPI) et des délais de livraison des projets.</li>
                                 <li>Collaboration avec les équipes de développement pour assurer la qualité des livrables.</li>
                                 <li>Participation à la rédaction de la documentation technique et fonctionnelle.</li>
                                 <li>Participation aux tests des nouvelles fonctionnalités sur les applications mobiles</li>
