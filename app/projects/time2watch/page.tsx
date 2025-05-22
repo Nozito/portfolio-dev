@@ -85,13 +85,14 @@ export default function Time2WatchPage() {
             La maquette de l'application a été réalisée avec <strong>Figma</strong>, permettant de visualiser l'interface utilisateur et le parcours utilisateur.
             Elle a été conçue pour être intuitive et agréable à utiliser, avec une attention particulière portée sur l'expérience utilisateur.
           </p>
-          <Image
-            src="/maquette-time2watch.jpeg"
-            alt="Maquette de l'application Time2Watch"
-            width={800}
-            height={800}
-            className="rounded-lg shadow-lg mt-4"
-          />
+          <video
+            controls
+            preload="metadata"
+            className="w-full max-w-md h-auto mx-auto rounded-lg shadow-lg mt-4"
+          >
+            <source src="/time2watch/time2watch.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
         </section>
 
         <section className="pt-8 border-t border-zinc-800 text-zinc-300 space-y-4">

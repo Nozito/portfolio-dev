@@ -41,18 +41,19 @@ export default function APdu113Page() {
         </section>
 
         <section className="pt-8 border-t border-zinc-800 text-zinc-300 space-y-4">
-          <h2 className="text-xl font-semibold text-zinc-100">Maquettes du projet</h2>
+          <h2 className="text-xl font-semibold text-zinc-100">Maquette du projet</h2>
           <p className="text-justify">
             Plusieurs maquettes ont été réalisées avec <strong>Adobe XD</strong> pour poser les bases visuelles du site. Ces prototypes permettent
             de définir l’identité graphique, le parcours utilisateur, et les composants principaux.
           </p>
-          <Image
-            src="/maquette-apdu113-home.jpeg"
-            alt="Maquette de la page d'accueil APdu113"
-            width={800}
-            height={800}
-            className="rounded-lg shadow-lg mt-4"
-          />
+          <video
+            controls
+            preload="metadata"
+            className="w-full max-w-3xl h-auto mx-auto rounded-lg shadow-lg mt-4"
+          >
+            <source src="/apdu113/apdu113.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
           <p className="text-justify">
             La direction artistique s’inspire de l’univers d’APdu113, avec des tons sombres, un style brut et des visuels percutants.
             Chaque section est pensée pour offrir une expérience fluide et engageante, que ce soit sur desktop ou mobile.

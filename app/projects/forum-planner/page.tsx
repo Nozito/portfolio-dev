@@ -79,15 +79,30 @@ export default function ForumPlannerPage() {
                     </p>
                 </section>
                 <section className="pt-8 border-t border-zinc-800">
-                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Captures d’écran</h2>
+                    <h2 className="text-xl font-semibold text-zinc-100 mb-4">Vidéos</h2>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="overflow-hidden rounded-xl border border-zinc-700">
-                            <img src="/images/forum-planner/screenshot1.png" alt="Aperçu de l'interface - Accueil" className="w-full h-auto object-cover" />
+                            <video
+                                controls
+                                preload="metadata"
+                                poster="/forumplanner/homepage.png"
+                                className="w-full h-auto object-cover"
+                            >
+                                <source src="/forumplanner/homepage.mp4" type="video/mp4" />
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
                         </div>
                         <div className="overflow-hidden rounded-xl border border-zinc-700">
-                            <img src="/images/forum-planner/screenshot2.png" alt="Aperçu de l'interface - Réservation" className="w-full h-auto object-cover" />
+                            <video
+                                controls
+                                preload="metadata"
+                                poster="/forumplanner/profil.png"
+                                className="w-full h-auto object-cover"
+                            >
+                                <source src="/forumplanner/profil.mp4" type="video/mp4" />
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
                         </div>
-                        {/* Ajoute d'autres images si besoin */}
                     </div>
                 </section>
             </main>
