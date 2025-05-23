@@ -13,20 +13,14 @@ export default function BanquePostale() {
 
     const toolsImages = [
         { src: "/lbp/ihm-gdo.png", alt: "Interface GDO - Découverte" },
-        { src: "/lbp/cheque-exemple.jpg", alt: "Exemple de chèque rempli (fictif)" },
+        { src: "/lbp/cheque.png", alt: "Exemple de chèque rempli (fictif)" },
         { src: "/lbp/oaq.png", alt: "Création Outil d’Aide à la Qualification (OAQ)" },
     ];
 
     const projectImages = [
+        { src: "/lbp/cahier-de-recettes.png", alt: "Cahier de recette présenté" },
+        { src: "/lbp/faq.png", alt: "Extrait FAQ projet validée" },
         { src: "/lbp/passeport-risque.png", alt: "Exemple Passeport Risque" },
-        { src: "/lbp/faq-moe.png", alt: "Extrait FAQ projet validée" },
-        { src: "/lbp/cahier-recette.png", alt: "Cahier de recette présenté" },
-    ];
-
-    const reportingImages = [
-        { src: "/lbp/reporting-cheque.png", alt: "Évolution réclamations chèque (chiffres fictifs)" },
-        { src: "/lbp/volumetrie-lcr.png", alt: "Reporting LCR 2022-2025 (chiffres fictifs)" },
-        { src: "/lbp/reporting-bdf.png", alt: "Reporting Guideline Fraude BDF S2 2024 (chiffres fictifs)" },
     ];
 
     const handleNext = (images: any[], setIndex: React.Dispatch<React.SetStateAction<number>>) => {
@@ -182,7 +176,18 @@ export default function BanquePostale() {
                             Ce reporting visait à garantir la conformité avec les obligations légales et à anticiper les évolutions possibles du cadre réglementaire en matière de fraude bancaire.
                         </li>
                     </ul>
-                    {renderCarousel(reportingImages, reportingIndex, setReportingIndex)}
+                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <div className="w-full max-w-xl mx-auto">
+                            <Image
+                                src="/lbp/volumetrie-lcr.png"
+                                alt="Exemple de reporting sur les réclamations"
+                                width={800}
+                                height={450}
+                                className="object-contain w-full h-auto rounded-xl"
+                                sizes="(max-width: 768px) 100vw, 800px"
+                            />
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
