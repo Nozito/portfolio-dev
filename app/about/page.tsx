@@ -63,7 +63,7 @@ export default function AboutPage() {
                     </div>
                     <div className="lg:w-2/3 lg:pl-12 text-center lg:text-left">
                         <h1 className="text-4xl sm:text-5xl font-bold text-white">Noah DEKEYZER</h1>
-                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">Etudiant en 2ème année de BTS SIO SLAM</p>
+                        <p className="text-xl sm:text-2xl text-gray-400 mt-2">Etudiant en 3ème année de BUT GEA GEMA</p>
 
                         <div className="flex space-x-8 mt-6 justify-center lg:justify-start">
                             <Link
@@ -85,7 +85,9 @@ export default function AboutPage() {
                         </div>
 
                         <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto sm:text-left text-justify sm:text-justify-auto">
-                            Etudiant en 2ème année de BTS SIO, j'ai acquis des compétences solides en programmation, gestion de projets et design d'interface utilisateur. Je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences et contribuer à des projets innovants.
+                            Étudiant en 3ème année de BUT GEA GEMA, j'ai acquis des compétences solides en programmation (web, mobile, bases de données), gestion de projets (planification, suivi, reporting) et design d'interface utilisateur (UI/UX, outils graphiques). Je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences et contribuer à des projets innovants, tout en développant ma double compétence en gestion et informatique.
+                            <br />
+                            Actuellement, je recherche une alternance pour la rentrée de septembre 2025, en rythme 3 semaines en entreprise / 1 semaine.
                         </p>
 
                         <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
@@ -186,6 +188,13 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-semibold mb-8">Parcours Scolaire</h2>
 
                     <div className="space-y-12">
+                        <div className="p-6">
+                            <h3 className="text-2xl font-semibold">BUT GEA GEMA – IUT Annecy, Annecy</h3>
+                            <p className="text-gray-400 mt-1">2025 – 2026</p>
+                            <p className="text-gray-300 mt-4">
+                                Spécialisation en Gestion des Entreprises et des Administrations, option Gestion Entrepreunariat et Management des Activités (GEMA).
+                            </p>
+                        </div>
                         <div className="p-6">
                             <h3 className="text-2xl font-semibold">BTS SIO – Lycée Gabriel Fauré, Annecy</h3>
                             <p className="text-gray-400 mt-1">2023 – 2025</p>
