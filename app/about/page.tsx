@@ -126,6 +126,43 @@ export default function AboutPage() {
                                 <div className="flex items-center space-x-6 ml-0">
                                     <div className="w-16 h-16 sm:w-16 sm:h-16 relative rounded-full overflow-hidden">
                                         <Image
+                                            src="/logo-stäubli.png"
+                                            alt="Stäubli"
+                                            fill
+                                            style={{ objectFit: 'contain' }}
+                                        />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold">
+                                            <Link
+                                                href="https://www.staubli.com"
+                                                target="_blank"
+                                                className="text-white hover:underline"
+                                            >
+                                                Stäubli
+                                            </Link>
+                                        </h3>
+                                        <p className="text-gray-400 text-base">Alternance – Assistant Marketing Manager</p>
+                                    </div>
+                                </div>
+                                <p className="text-gray-400 text-sm lg:text-base">Septembre 2025 – Actuellement</p>
+                            </div>
+                            <ul className="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                                <li>Gestion de contrat et Accords de Confidentialité.</li>
+                                <li>Co-organisation d'événements internes et externes.</li>
+                                <li>Aider à la traduction de contenus marché/produit, de l'anglais en 5 langues</li>
+                                <li>Traiter et suivre les Demandes d'Achat du service via SAP</li>
+                                <li>Répondre aux filiales pour l'application des conditions commerciales des contrats clients</li>
+                                <li>Améliorer la qualité de données (CRM, ERP)</li>
+                                <li>Gérer des cash-backs via Excel </li>
+                            </ul>
+                        </div>
+
+                        <div className="p-6 border border-gray-700 rounded-lg">
+                            <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between space-y-4 lg:space-y-0">
+                                <div className="flex items-center space-x-6 ml-0">
+                                    <div className="w-16 h-16 sm:w-16 sm:h-16 relative rounded-full overflow-hidden">
+                                        <Image
                                             src="/logo-lbp.png"
                                             alt="La Banque Postale"
                                             fill
