@@ -295,7 +295,7 @@ export default function AboutPage() {
                                     className="px-4 py-2 rounded-xl bg-zinc-800/60 border border-zinc-700/70 text-sm font-medium text-zinc-300 flex items-center gap-2 hover:bg-zinc-800 hover:border-zinc-600 transition-all"
                                 >
                                     <span className="text-base">🇬🇧</span>
-                                    English (B1)
+                                    English (B2)
                                 </motion.span>
                                 <Link
                                     href="/cv.pdf"
