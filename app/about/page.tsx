@@ -5,7 +5,7 @@ import { Navigation } from '../components/nav';
 import { BiLogoVisualStudio, BiLogoBootstrap, BiLogoMicrosoft } from 'react-icons/bi';
 import { HiLocationMarker } from 'react-icons/hi';
 import {
-    SiJavascript, SiHtml5, SiCss3, SiGit, SiAndroidstudio, SiFigma,
+    SiJavascript, SiHtml5, SiCss, SiGit, SiAndroidstudio, SiFigma,
     SiPostman, SiTrello, SiGithub, SiPhpstorm, SiPhp, SiSymfony, SiMysql,
     SiTailwindcss, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator,
     SiAdobephotoshop, SiAdobexd, SiApple,
@@ -106,7 +106,7 @@ const studies = [
 const skillsData = {
     'Langages & Frameworks': [
         { name: 'HTML5', icon: <SiHtml5 />, level: 'Expert' },
-        { name: 'CSS3', icon: <SiCss3 />, level: 'Intermédiaire' },
+        { name: 'CSS3', icon: <SiCss />, level: 'Intermédiaire' },
         { name: 'JavaScript', icon: <SiJavascript />, level: 'Avancé' },
         { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Avancé' },
         { name: 'Bootstrap', icon: <BiLogoBootstrap />, level: 'Avancé' },
