@@ -17,9 +17,6 @@ importers:
 
   .:
     dependencies:
-      '@next/font':
-        specifier: ^13.5.11
-        version: 13.5.11
       '@next/mdx':
         specifier: ^13.5.11
         version: 13.5.11
@@ -69,8 +66,8 @@ importers:
         specifier: ^15.5.1
         version: 15.5.1(i18next@25.2.0(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
       react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@18.3.1)
+        specifier: ^5.7.0
+        version: 5.7.0(react@18.3.1)
       react-swipeable:
         specifier: ^7.0.2
         version: 7.0.2(react@18.3.1)
@@ -117,6 +114,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.6
         version: 18.3.6(@types/react@18.3.20)
+      '@types/react-icons':
+        specifier: ^2.2.7
+        version: 2.2.7
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
@@ -419,9 +419,6 @@ packages:
 
   '@next/env@13.5.11':
     resolution: {integrity: sha512-fbb2C7HChgM7CemdCY+y3N1n8pcTKdqtQLbC7/EQtPdLvlMUT9JX/dBYl8MMZAtYG4uVMyPFHXckb68q/NRwqg==}
-
-  '@next/font@13.5.11':
-    resolution: {integrity: sha512-C4fRIb3O0Dh/Wi8hE1lkHDKmR5leUfe4fG+wfuRX8p3PPeduvJYMcU/Wq5eU3XEl2XqMeOuVbLCd2DAH/8Er2Q==}
 
   '@next/mdx@13.5.11':
     resolution: {integrity: sha512-PB2dhmGGlOno0eKRM1WY33PSGlCpZN9MvH6MN7DlMilsB20f1nTYZJgJNSiOyxmrdbWYzN944Z0VgA8Lre1ZZw==}
@@ -729,6 +726,12 @@ packages:
     resolution: {integrity: sha512-nf22//wEbKXusP6E9pfOCDwFdHAX4u172eaJI4YkDRQEZiorm6KfYnSC2SWLDMVWUOWPERmJnN0ujeAfTBLvrw==}
     peerDependencies:
       '@types/react': ^18.0.0
+
+  '@types/react-icon-base@2.1.6':
+    resolution: {integrity: sha512-ebbN1JjCm6RxBd3HdI1+8VCdiOI4qMjnl9DIHWJFrB/eYLF4mzIgdL34PIqCJBLY3vlwil9v6IHQvzsa8vgMsg==}
+
+  '@types/react-icons@2.2.7':
+    resolution: {integrity: sha512-qxc8xtwgDG5Ub/WILU9tZa7zxz2UZqOU4yXbBa+Xg+0LbP031NB9gvf1d/ALvHLGCsCf3WEVttNoW/wc30jn1w==}
 
   '@types/react@18.3.20':
     resolution: {integrity: sha512-IPaCZN7PShZK/3t6Q87pfTkRm6oLTd4vztyoj+cbHUF1g3FfVb2tFIL79uCRKEfv16AhqDMBywP2VW3KIZUvcg==}
@@ -1744,8 +1747,8 @@ packages:
       typescript:
         optional: true
 
-  react-icons@5.5.0:
-    resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
+  react-icons@5.7.0:
+    resolution: {integrity: sha512-LBLy340Rzqy6+/yVhZKT3B/QpP1BZaesGqasf09HPOBzRarcDIFH0WwXlXQfE7q7ipxK4MSiC5DIBWURCny6fw==}
     peerDependencies:
       react: '*'
 
@@ -2451,8 +2454,6 @@ snapshots:
 
   '@next/env@13.5.11': {}
 
-  '@next/font@13.5.11': {}
-
   '@next/mdx@13.5.11':
     dependencies:
       source-map: 0.7.4
@@ -2712,6 +2713,15 @@ snapshots:
   '@types/react-dom@18.3.6(@types/react@18.3.20)':
     dependencies:
       '@types/react': 18.3.20
+
+  '@types/react-icon-base@2.1.6':
+    dependencies:
+      '@types/react': 18.3.20
+
+  '@types/react-icons@2.2.7':
+    dependencies:
+      '@types/react': 18.3.20
+      '@types/react-icon-base': 2.1.6
 
   '@types/react@18.3.20':
     dependencies:
@@ -4021,7 +4031,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       typescript: 5.8.3
 
-  react-icons@5.5.0(react@18.3.1):
+  react-icons@5.7.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
