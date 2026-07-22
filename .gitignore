@@ -4,6 +4,7 @@
 .pnp.js
 .pnpm
 .next
+.claude
 
 # testing
 /coverage

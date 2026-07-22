@@ -5,13 +5,12 @@ import { Navigation } from '../components/nav';
 import { BiLogoVisualStudio, BiLogoBootstrap, BiLogoMicrosoft } from 'react-icons/bi';
 import { HiLocationMarker } from 'react-icons/hi';
 import {
-    SiJavascript, SiHtml5, SiCss3, SiGit, SiAndroidstudio, SiFigma,
+    SiJavascript, SiHtml5, SiCss, SiGit, SiAndroidstudio, SiFigma,
     SiPostman, SiTrello, SiGithub, SiPhpstorm, SiPhp, SiSymfony, SiMysql,
-    SiTailwindcss, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator,
-    SiAdobephotoshop, SiAdobexd, SiApple,
+    SiTailwindcss, SiApple,
     SiNotion,
-    SiCanva,
 } from 'react-icons/si';
+import { Film, Video, PenTool, Image as ImageIcon, Palette } from 'lucide-react';
 import Link from 'next/link';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { useRef } from 'react';
@@ -22,7 +21,7 @@ const experiences = [
         logo: '/logo-stäubli.png',
         role: 'Assistant Marketing Manager',
         type: 'Alternance',
-        period: 'Septembre 2025 – Actuellement',
+        period: 'Septembre 2025 – Aout 2026',
         url: 'https://www.staubli.com',
         tasks: [
             'Gestion de contrat et Accords de Confidentialité',
@@ -84,10 +83,24 @@ const experiences = [
 
 const studies = [
     {
-        title: 'BAC STMG',
-        school: 'Lycée Charles Baudelaire, Annecy',
-        period: '2020 – 2023',
-        description: 'Système d\'Information de Gestion (SIG) + Cinéma-Audiovisuel',
+        title: 'Master PGE - International Business Management',
+        school: 'INSEEC, Paris',
+        period: '2026 – 2028',
+        description: 'Spécialisation en Marketing et Management International',
+    },
+    {
+        title: 'BUT GEA GEMA',
+        school: 'IUT Annecy, Annecy',
+        period: '2025 – 2026',
+        description: 'Gestion Entrepreneuriat et Management des Activités (GEMA)',
+        skills: [
+            'Gestion de projet',
+            'Comptabilité et gestion financière',
+            'Management d\'équipe',
+            'Entrepreneuriat',
+            'Droit des affaires',
+            'Marketing opérationnel',
+        ],
     },
     {
         title: 'BTS SIO',
@@ -96,17 +109,17 @@ const studies = [
         description: 'Solutions Logicielles et Applications Métiers (SLAM)',
     },
     {
-        title: 'BUT GEA GEMA',
-        school: 'IUT Annecy, Annecy',
-        period: '2025 – 2026',
-        description: 'Gestion Entrepreneuriat et Management des Activités (GEMA)',
+        title: 'BAC STMG',
+        school: 'Lycée Charles Baudelaire, Annecy',
+        period: '2020 – 2023',
+        description: 'Système d\'Information de Gestion (SIG) + Cinéma-Audiovisuel',
     },
 ];
 
 const skillsData = {
     'Langages & Frameworks': [
         { name: 'HTML5', icon: <SiHtml5 />, level: 'Expert' },
-        { name: 'CSS3', icon: <SiCss3 />, level: 'Intermédiaire' },
+        { name: 'CSS3', icon: <SiCss />, level: 'Intermédiaire' },
         { name: 'JavaScript', icon: <SiJavascript />, level: 'Avancé' },
         { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Avancé' },
         { name: 'Bootstrap', icon: <BiLogoBootstrap />, level: 'Avancé' },
@@ -130,13 +143,13 @@ const skillsData = {
     ],
     'Design & Création': [
         { name: 'Figma', icon: <SiFigma />, level: 'Avancé' },
-        { name: 'Photoshop', icon: <SiAdobephotoshop />, level: 'Intermédiaire' },
-        { name: 'Illustrator', icon: <SiAdobeillustrator />, level: 'Intermédiaire' },
-        { name: 'After Effects', icon: <SiAdobeaftereffects />, level: 'Intermédiaire' },
-        { name: 'Premiere Pro', icon: <SiAdobepremierepro />, level: 'Intermédiaire' },
-        { name: 'Adobe XD', icon: <SiAdobexd />, level: 'Intermédiaire' },
+        { name: 'Photoshop', icon: <ImageIcon />, level: 'Intermédiaire' },
+        { name: 'Illustrator', icon: <PenTool />, level: 'Intermédiaire' },
+        { name: 'After Effects', icon: <Film />, level: 'Intermédiaire' },
+        { name: 'Premiere Pro', icon: <Video />, level: 'Intermédiaire' },
+        { name: 'Adobe XD', icon: <PenTool />, level: 'Intermédiaire' },
         { name: 'Suite Microsoft', icon: <BiLogoMicrosoft />, level: 'Avancé' },
-        { name: 'Canva', icon: <SiCanva />, level: 'Avancé' },
+        { name: 'Canva', icon: <Palette />, level: 'Avancé' },
     ],
 };
 
@@ -295,7 +308,7 @@ export default function AboutPage() {
                                     className="px-4 py-2 rounded-xl bg-zinc-800/60 border border-zinc-700/70 text-sm font-medium text-zinc-300 flex items-center gap-2 hover:bg-zinc-800 hover:border-zinc-600 transition-all"
                                 >
                                     <span className="text-base">🇬🇧</span>
-                                    English (B2)
+                                    English (B2) – TOEIC 785
                                 </motion.span>
                                 <Link
                                     href="/cv.pdf"
@@ -721,6 +734,18 @@ export default function AboutPage() {
                                 </div>
                                 <p className="text-zinc-400 text-xs sm:text-sm mb-2 sm:mb-3">{study.school}</p>
                                 <p className="text-zinc-300 text-xs sm:text-sm leading-relaxed">{study.description}</p>
+                                {study.skills && (
+                                    <div className="flex flex-wrap gap-1.5 mt-3">
+                                        {study.skills.map((skill) => (
+                                            <span
+                                                key={skill}
+                                                className="px-2 py-1 rounded-md bg-zinc-800/70 border border-zinc-700/60 text-[11px] text-zinc-300"
+                                            >
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
                             </motion.div>
                         ))}
                     </div>

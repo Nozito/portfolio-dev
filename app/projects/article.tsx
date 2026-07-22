@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import Link from "next/link";
 import { Eye } from "lucide-react";
+import { formatDate } from "../../lib/utils";
 
 type Project = {
   _id: string;
@@ -24,7 +25,7 @@ export const Article: FC<Props> = ({ project }) => {
           <span className="text-xs text-zinc-200 group-hover:text-white">
             {project.date ? (
               <time dateTime={new Date(project.date).toISOString()}>
-                {Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(project.date))}
+                {formatDate(project.date)}
               </time>
             ) : (
               <span>SOON</span>
