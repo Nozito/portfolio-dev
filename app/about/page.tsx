@@ -39,7 +39,7 @@ const experiences = [
         logo: '/logo-blyss.png',
         role: 'Fondateur & Développeur',
         type: 'Startup',
-        period: 'Novembre 2025 – Actuellement',
+        period: 'Octobre 2025 – Actuellement',
         url: 'https://www.blyssapp.fr',
         tasks: [
             'Gestion de projet, planification et suivi des tâches',
